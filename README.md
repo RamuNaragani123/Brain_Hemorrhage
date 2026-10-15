@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Brain Hemorrhage Detection using Deep Learning
 
 A Django web application that accepts a brain scan image and uses a pre-trained TensorFlow/Keras model to predict one of two labels: `Hemorrhogic` or `Non Hemorrhogic`.
@@ -102,3 +103,6 @@ Replace the URL with your repository's actual HTTPS URL. Sign in through the Git
 - Dataset images, training notebooks, local database, and extra training experiments are excluded from Git by `.gitignore`.
 - If the model predicts unexpected labels, verify the model's original training preprocessing and class order. The code currently follows the labels file included with the original project: class 0 = `Hemorrhogic`, class 1 = `Non Hemorrhogic`.
 - For deployment, replace the development settings and secret key, configure allowed hosts, and use a production server.
+=======
+# Brain_Hemorrhage
+>>>>>>> b8668525eaa23191054402350f85ef881c0a474a
