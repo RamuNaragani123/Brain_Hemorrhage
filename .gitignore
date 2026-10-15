@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+.venv/
+env/
+
+# Local/runtime files
+db.sqlite3
+media/
+staticfiles/
+.DS_Store
+
+# Training artifacts and large data
+dataset/
+Dataset/
+Dataset1/
+val/
+*.ipynb
+.ipynb_checkpoints/
+Testing_code/

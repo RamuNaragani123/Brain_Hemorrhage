@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%load static %}
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Home</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{% static 'images/favicon.ico' %}"/>
+
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">       
+    <!-- Default Theme css file -->
+    <link id="switcher" href="{% static 'css/themes/default-theme.css' %}" rel="stylesheet">   
+    <!-- Slick slider css file -->
+    <link href="{% static 'css/slick.css" rel="stylesheet' %}"> 
+    <!-- Photo Swipe Image Gallery -->     
+    <link rel='stylesheet prefetch' href="{% static 'css/photoswipe.css' %}">
+    <link rel='stylesheet prefetch' href="{% static 'css/default-skin.css' %}">    
+
+    <!-- Main structure css file -->
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>  
+    <link href='http://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:900' rel='stylesheet' type='text/css'>
+  </head>
+  <body style="overflow: hidden;">  
+
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation"style="background-color: #e8e6e1;">  
+          <div class="container"style="background-color: #e8e6e1;">
+            <div class="navbar-header">             
+              <!-- TEXT BASED LOGO -->
+              <a class="navbar-brand" href="index.html"><i class="fa fa-heartbeat"></i> <span> Detection</span></a>              
+              <!-- IMG BASED LOGO  -->
+              <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>    -->                    
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" style="background-color: #e8e6e1;">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li ><a href="#">Home</a></li>
+                <li><a href="{%url 'abstract'%}">Over View</a></li>
+                <li><a href="{%url 'upload'%}">Features</a></li>  
+                
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+      <!-- END MENU -->    
+    </header>
+    <!--=========== END HEADER SECTION ================-->   
+
+    <!--=========== BEGIN SLIDER SECTION ================-->
+    <section id="sliderArea">  
+      <div class="top-slider">
+        <div class="top-slide-inner">
+          <div class="slider-img" style="position: relative;">
+            <img src="{% static 'images/im.jpg' %}" alt="" style="height: 500px; width: 100%;"> 
+            <h2 style="position: absolute; top: 45%; left: 55%; transform: translate(-50%, -50%); color: #fff; font-size:40px;" ><strong>Exploring DL and ML</strong> Approaches for Brain Hemorrhage Detection</h2>
+            <style>
+            </style>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END SLIDER SECTION ================-->
+
+    <!--=========== BEGIN Top Feature SECTION ================-->
+    <section id="topFeature">
+      <div>
+        <div style="margin-left: 20%;">
+              <h3>Emergency Care</h3>
+              <h4 style="color:#030303; text-align: justify;">
+              A brain hemorrhage, or intracranial hemorrhage, is bleeding that occurs inside the skull.<br> It can happen within the brain tissue (intracerebral), in the space around the brain (subarachnoid),<br>between the brain and the skull (subdural), or between the skull and<br> the outermost brain covering (epidural).</h4>
+              <div class="readmore_area">
+                <a href="#" data-hover="Read More"><span>Read More</span></a>
+              </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--=========== END Top Feature SECTION ================-->
+
+    <!--=========== Start Footer SECTION ================-->
+    <footer id="footer">
+            <div class="footer-copyright">
+              <p>&copy; Copyright 2024 <a href="index.html">Python Team</a></p>
+              <div>              
+                <a href="#"  style="margin:10px;"><span class="fa fa-facebook"></span></a>
+                <a href="#"  style="margin:10px;"><span class="fa fa-twitter"></span></a>
+                <a href="#"  style="margin:10px;"><span class="fa fa-google-plus"></span></a>
+                <a href="#"  style="margin:10px;"><span class="fa fa-linkedin"></span></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=========== End Footer SECTION ================-->
+
+    <!-- jQuery Library  -->
+    <script src="{% static 'js/jquery.js' %}"></script>    
+    <!-- Bootstrap default js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- slick slider -->
+    <script src="{% static 'js/slick.min.js' %}"></script>    
+    <script type="text/javascript" src="{% static 'js/modernizr.custom.79639.js' %}"></script>      
+    <!-- counter -->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <!-- Doctors hover effect -->
+    <script src="{% static 'js/snap.svg-min.js' %}"></script>
+    <script src="{% static 'js/hovers.js' %}"></script>
+    <!-- Photo Swipe Gallery Slider -->
+    <script src="{% static 'js/photoswipe.min.js' %}"></script>
+    <script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>    
+    <script src="{% static 'js/photoswipe-gallery.js' %}"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/custom.js' %}"></script>
+     
+  </body>
+</html>
